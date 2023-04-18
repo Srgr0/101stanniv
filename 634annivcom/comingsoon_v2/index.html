@@ -6,7 +6,6 @@
   <title>第101回記念祭</title>
   <!--カウントダウン用スクリプト-->
   <script src="countdown.js"></script>
-  <!--余白やや広め、ダークモード対応-->
   <style>
     body {
       margin: 0;
@@ -16,31 +15,35 @@
       color: #333;
     }
 
+    /*余白広め*/
     h1, h2, h3 {
       margin-top: 1.25em;
       margin-bottom: 1.25em;
     }
 
+    /*linksのスタイル調整*/
     ul {
       list-style: none;
       padding: 0;
     }
 
+    /*リンクの色*/
     a {
       color: #1a73e8;
       text-decoration: none;
     }
 
+    /*リンクの下線表示*/
     a:hover {
       text-decoration: underline;
     }
 
+    /*ダークモード対応*/
     @media (prefers-color-scheme: dark) {
       body {
         background-color: #333;
         color: #f0f0f0;
       }
-      
       a {
         color: #80bfff;
       }
