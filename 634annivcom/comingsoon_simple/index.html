@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        #countdown {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+    <div id="countdown"></div>
+
+    <!--
+    <script>
+        // 公開日の設定
+        var releaseDate = new Date("2023/04/18 00:00:00").getTime();
+
+        // カウントダウンの更新
+        var countdownInterval = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = releaseDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "日 " + hours + "時間 "
+            + minutes + "分 " + seconds + "秒";
+
+            // 公開日になったらカウントダウンを停止
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "公開しました！";
+            }
+        }, 1000);
+    </script>
+    -->
+</body>
+</html>
